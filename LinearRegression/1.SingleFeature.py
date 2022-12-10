@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 x_train = [1.0, 1.7, 2.0, 2.5, 3.0, 3.2]
-y_train = [230, 330, 490,  500, 650, 700]
+y_train = [230, 330, 490, 500, 650, 700]
 
 def gradient_descent(x, y, w, b):
     alpha = 0.01
@@ -13,7 +13,7 @@ def gradient_descent(x, y, w, b):
             dj_dw += x[i] * sum
         new_w = w - alpha * dj_dw / len(x)
         new_b = b - alpha * dj_db / len(x)
-        if w - new_w and b == new_b: break
+        if w == new_w and b == new_b: break
         w = new_w
         b = new_b
     return w, b
