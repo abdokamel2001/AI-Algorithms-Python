@@ -8,7 +8,7 @@ y_train = np.array([460, 232, 178])
 
 initial_w = np.zeros(4)
 initial_b = 0.0
-iterations = 1000
+iterations = 10000
 alpha = 5.0e-7
 
 def compute_cost(x, y, w, b):
