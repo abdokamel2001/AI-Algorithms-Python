@@ -17,7 +17,7 @@ def compute(w, b, X, Y):
     db = 1 / m * np.sum(A)
     cost = np.squeeze(np.array(cost))
     
-    #Regulization
+    # Regulization
     reg_cost = np.dot(w, w)
     reg_cost *= 0.5 * lambda_ / m
     total_cost = cost + reg_cost
